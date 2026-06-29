@@ -572,3 +572,96 @@ body{
 
 
 }
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+.project-card{
+
+    background:#f5f7ee;
+    padding:20px;
+
+    border-radius:18px;
+
+    border-left:5px solid #062b1d;
+
+    transition:.4s;
+
+}
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+.project-card h4{
+
+    color:#062b1d;
+    font-size:20px;
+    margin-bottom:10px;
+
+}
+
+
+.project-card p{
+
+    font-size:14px;
+    line-height:24px;
+
+}
+
+
+
+.project-card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    background:#062b1d;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+
+
+.project-card a:hover{
+
+    background:#cfd9a6;
+
+    color:#062b1d;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:800px){
+
+.projects{
+
+    grid-template-columns:1fr;
+
+}
+
+}
